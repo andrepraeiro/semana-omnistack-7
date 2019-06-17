@@ -34,7 +34,7 @@ module.exports = {
       description,
       hashtags,
       image: fileName,
-    }).catch(r => console.log(r));
+    });
     req.io.emit('post', post);
     return res.json(post);
   },
